@@ -135,6 +135,8 @@ public class ServiceParamsProperties {
 
     public static class Zipkin {
         private String uri;
+        private boolean enabled;
+        private String probability;
 
         public String getUri() {
             return uri;
@@ -143,6 +145,22 @@ public class ServiceParamsProperties {
         public void setUri(String uri) {
             this.uri = uri;
         }
+
+		public boolean isEnabled() {
+			return enabled;
+		}
+
+		public void setEnabled(boolean enabled) {
+			this.enabled = enabled;
+		}
+
+		public String getProbability() {
+			return probability;
+		}
+
+		public void setProbability(String probability) {
+			this.probability = probability;
+		}
     }
     
     public static class RestTemplateConfiguration {
